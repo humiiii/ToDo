@@ -103,7 +103,7 @@ export default function Home() {
           </Text>
         </Flex>
 
-        <Flex justify="space-between" px="4rem">
+        <Flex justify="space-around" px="4rem">
           {state.columnOrder.map((columnId) => {
             const column = state.columns[columnId];
             const tasks = column.taskIds.map((taskId) => state.tasks[taskId]);
@@ -128,12 +128,12 @@ const initialData = {
   columns: {
     "column-1": {
       id: "column-1",
-      title: "TO-DO",
+      title: "Drag n Drop",
       taskIds: [1, 2, 3, 4, 5, 6],
     },
     "column-2": {
       id: "column-2",
-      title: "COMPLETED",
+      title: "Drag n Drop",
       taskIds: [],
     },
   },
